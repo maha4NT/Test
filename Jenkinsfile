@@ -1,12 +1,12 @@
 node{
     
     
-   stage('1st stage git clone java project') {
+   stage('git clone') {
         git 'https://github.com/maha4NT/mahalogin.git'
    }
     
     
-  stage('2st stage execute maven goal install') {
+  stage('maven goal install') {
       sh label: '', script: 'mvn install'
    }
     
